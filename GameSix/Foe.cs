@@ -8,7 +8,7 @@ namespace GameSix
 
         public Foe(string name)
         {
-            this.name = name;
+            SetName(name);
             health =  100;
             shield = 0;
         }
@@ -16,6 +16,21 @@ namespace GameSix
         public string GetName()
         {
             return name;
+        }
+
+        public string SetName(string name)
+        {
+            this.name = name;
+        }
+
+        public float GetHealth()
+        {
+            return health;
+        }
+
+        public float GetShiled()
+        {
+            return shield;
         }
 
         public void TakeDamage(float damage)
@@ -29,6 +44,9 @@ namespace GameSix
                 if (health < 0) health = 0;
             }
         }
+        
+
+
 
     }
 
