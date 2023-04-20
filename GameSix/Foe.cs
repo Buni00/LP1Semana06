@@ -19,8 +19,10 @@ namespace GameSix
         }
 
         public string SetName(string name)
-        {
+        {   
+            name = name.Trim();
             this.name = name;
+            
 
             return name;
         }
