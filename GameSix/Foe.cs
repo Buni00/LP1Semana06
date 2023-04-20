@@ -21,6 +21,8 @@ namespace GameSix
         public string SetName(string name)
         {
             this.name = name;
+
+            return name;
         }
 
         public float GetHealth()
