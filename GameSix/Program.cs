@@ -25,6 +25,7 @@ namespace GameSix
                 Console.WriteLine(enemies[i].GetName());
             }
 
+
             Console.WriteLine(Foe.PowerUpCount);
 
             Console.WriteLine("Obrigado por ter usado este programa!");
