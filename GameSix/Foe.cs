@@ -5,12 +5,25 @@ namespace GameSix
         private string name;
         private float health;
         private float shield;
+        private static int powerUpCount;
 
         public Foe(string name)
         {
             SetName(name);
             health =  100;
             shield = 0;
+        }
+
+
+        public enum PowerUp
+    {   
+        Health,
+        Shield
+    }
+
+        static Foe()
+        {
+            powerUpCount = 0;
         }
 
         public string GetName()
@@ -60,6 +73,13 @@ namespace GameSix
             {
                 shield += val;
             }
+
+            powerUpCount ++;
+        }
+
+        public static int PowerUpCount
+        {
+            get { return powerUpCount; }
         }
         
 

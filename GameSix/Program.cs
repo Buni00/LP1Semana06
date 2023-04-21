@@ -24,7 +24,11 @@ namespace GameSix
             {
                 Console.WriteLine(enemies[i].GetName());
             }
+
+            Console.WriteLine(Foe.PowerUpCount);
             
         }
+
+
     }
 }
