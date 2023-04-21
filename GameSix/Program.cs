@@ -26,6 +26,12 @@ namespace GameSix
             }
 
             Console.WriteLine(Foe.PowerUpCount);
+
+            Console.WriteLine("Obrigado por ter usado este programa!");
+
+            Console.WriteLine("Merci d’utiliser ce programme!");
+
+
             
         }
 
