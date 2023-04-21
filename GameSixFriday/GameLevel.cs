@@ -44,6 +44,32 @@ namespace GameSixFriday
         }
 
 
+        public Difficulty GetDifficulty()
+        {
+            return difficulty;
+        }
+
+        public int GetNumRooms()
+        {
+            return nRooms;
+        }
+
+        public int GetNumFoes()
+        {
+            int count = 0;
+            for (int i = 0; i < foes.Length; i++)
+            {
+                if (foes[i] != null)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+
+
+
         
 
 
