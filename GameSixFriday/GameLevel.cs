@@ -31,11 +31,16 @@ namespace GameSixFriday
                 {
                     foes[roomIndex] = foe;
                 }
+                else
+                {
+                    Console.WriteLine("Only one foe per Room, no overbooking here");
+                }
             }
             else
             {
-                Console.WriteLine("Only one foe per Room, no overbooking here");
+                Console.WriteLine("That room does not exist");
             }
+            
         }
 
 
