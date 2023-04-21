@@ -22,7 +22,7 @@ namespace GameSix
 
             for (int i = 0; i < enemies.Length; i++)
             {
-                Console.WriteLine($"Enemie {i+1} = {enemies[i].GetName()}");
+                Console.WriteLine(enemies[i].GetName());
             }
             
         }
