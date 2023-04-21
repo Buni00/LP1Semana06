@@ -70,12 +70,12 @@ namespace GameSixFriday
         public void PrintFoes()
         {
             for (int i = 0; i < foes.Length; i++)
-    {
-            if (foes[i] != null)
             {
-                Console.WriteLine($"Room {i+1}: {foes[i].GetName()}");
+                if (foes[i] != null)
+                {
+                    Console.WriteLine($"Room {i+1}: {foes[i].GetName()}");
+                }
             }
-    }
         }
         
 
