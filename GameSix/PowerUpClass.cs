@@ -1,4 +1,4 @@
-public class PowerUp
+public class PowerUpClass
 {
     public enum PowerUp
     {   
